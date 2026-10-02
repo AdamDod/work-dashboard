@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Work Dashboard</title>
+    <meta name="description" content="A simple dashboard to organize work tasks, notes, and priorities." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Work dashboard</p>
+          <h1>Organize your day</h1>
+          <p class="subtitle">A clean, markdown-first dashboard for tasks, notes, and priorities.</p>
+        </div>
+        <section class="card stats" aria-label="Overview stats">
+          <div>
+            <span class="stat-number">12</span>
+            <span class="stat-label">Open tasks</span>
+          </div>
+          <div>
+            <span class="stat-number">4</span>
+            <span class="stat-label">Today</span>
+          </div>
+          <div>
+            <span class="stat-number">7</span>
+            <span class="stat-label">Done</span>
+          </div>
+        </section>
+      </header>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Today</h2>
+          <ul class="checklist">
+            <li><input type="checkbox" checked /> Review inbox</li>
+            <li><input type="checkbox" /> Finish priority task</li>
+            <li><input type="checkbox" /> Send updates</li>
+            <li><input type="checkbox" /> Plan tomorrow</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Markdown notes</h2>
+          <div class="markdown">
+            <h3>Focus</h3>
+            <p>Use this space for quick notes, meeting reminders, and goals.</p>
+            <pre># Example
+- Write task list
+- Track blockers
+- Review progress</pre>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Priorities</h2>
+          <ol class="priorities">
+            <li>Ship the most important work first</li>
+            <li>Keep the backlog small and visible</li>
+            <li>Review progress at the end of the day</li>
+          </ol>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
